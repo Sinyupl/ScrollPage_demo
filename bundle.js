@@ -1903,6 +1903,9 @@ $.fn.ScrollPage.defaults = {
 
 
 $(document).ready(function(){
+	if( navigator.userAgent.toLowerCase().indexOf('micromessenger') == -1 && typeof navgator.wxuserAgent == "undefined" ) {
+     	$(".nowx").show();
+	}
 	$("#container").ScrollPage();
 	
 	$(".page4 div").on("touchstart",function(e){
@@ -1911,9 +1914,7 @@ $(document).ready(function(){
 	$(".close").on("click", function(){
 		$(".info").addClass("hide");
 	});
-	if( navigator.userAgent.toLowerCase().indexOf('micromessenger') == -1 || typeof navgator.wxuserAgent == "undefined" ) {
-     	$(".nowx").show();
-	}
+	
 });
 
 
