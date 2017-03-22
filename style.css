@@ -1,0 +1,231 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+#sections {
+  width: 100%;
+  height: 400%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all .3s ease-in-out; }
+  #sections .yellow {
+    background-color: yellow; }
+  #sections .red {
+    background-color: red; }
+  #sections .blue {
+    background-color: blue; }
+  #sections .gray {
+    background-color: gray; }
+
+.section {
+  width: 100%;
+  height: 25%;
+  float: left; }
+
+.head {
+  width: 40%;
+  margin: 0 auto; }
+  .head img {
+    width: 100%; }
+
+.page1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #CC9999; }
+  .page1 section {
+    width: 100%;
+    clear: all; }
+  .page1 p {
+    text-align: center;
+    line-height: 200%;
+    margin-top: 20px;
+    color: #333;
+    font-size: 20px; }
+
+.page2 {
+  background-color: #333; }
+  .page2 h2 {
+    margin-bottom: 5px; }
+  .page2 .p1 {
+    width: 80%;
+    padding: 20px 3%;
+    margin-left: 3%;
+    margin-top: 20px;
+    border-radius: 8px;
+    color: #CCFF66;
+    font-size: 18px;
+    word-break: break-all; }
+  .page2 .p2 {
+    background-color: #FFCC99;
+    width: 80%;
+    line-height: 150%;
+    padding: 20px 4%;
+    margin-left: 12%;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 8px solid #993333;
+    color: #333;
+    box-shadow: -2px 2px 5px #333333;
+    font-size: 18px;
+    word-break: break-all; }
+
+.page3 {
+  display: flex;
+  align-items: center; }
+  .page3 section {
+    color: #666;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto; }
+    .page3 section h2 {
+      margin-bottom: 10px; }
+    .page3 section p img {
+      width: 100%;
+      margin: 10px 0; }
+
+.page4 {
+  background-color: #FFFFCC;
+  display: flex;
+  align-items: center; }
+  .page4 section {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 150%; }
+    .page4 section h2 {
+      margin-bottom: 10px; }
+  .page4 p {
+    z-index: 99; }
+  .page4 li {
+    margin: 15px 0; }
+  .page4 div {
+    background-color: #99CC99;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    width: 60%;
+    padding: 5px;
+    margin: 0 auto; }
+
+.info {
+  position: fixed;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 -15px 25px #333;
+  padding: 20px 0;
+  transition: all 0.4s ease-out; }
+  .info .close {
+    width: 10%;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .info .close img {
+      width: 100%; }
+  .info div {
+    width: 50%;
+    margin: 0 auto;
+    z-index: 999; }
+    .info div img {
+      width: 100%; }
+  .info p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    line-height: 150%; }
+    .info p a {
+      text-decoration: none;
+      color: #00b0f0; }
+
+.hide {
+  display: none !important; }
+
+.top_100 {
+  -webkit-animation: top100 1s ease-in-out; }
+
+.down100 {
+  -webkit-animation: down100 1.2s ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-delay: 0.5s; }
+
+.fadeInLeft {
+  -webkit-animation: fadeInLeft 0.8s ease-in; }
+
+.fadeInRight {
+  -webkit-animation: fadeInRight 0.8s ease-in;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-delay: 0.5s; }
+
+.nextFadeIn {
+  -webkit-animation: fadeIn 0.5s linear;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-delay: 4s;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 15px;
+  text-align: center; }
+  .nextFadeIn img {
+    width: 20%; }
+
+.pages {
+  width: 5px;
+  position: fixed;
+  left: 1%;
+  top: 40%; }
+  .pages li {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    float: left;
+    margin-top: 3px; }
+  .pages .active {
+    background-color: #fff !important; }
+
+/*甯ф暟鍔ㄧ敾*/
+@keyframes top100 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+@keyframes down100 {
+  from {
+    transform: translateY(100px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+@keyframes fadeInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */
