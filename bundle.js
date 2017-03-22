@@ -1911,8 +1911,8 @@ $(document).ready(function(){
 	$(".close").on("click", function(){
 		$(".info").addClass("hide");
 	});
-	if( typeof WeixinJSBridge == "undefined" ){
-		$(".nowx").show();
+	if( navigator.userAgent.toLowerCase().indexOf('micromessenger') == -1 || typeof navgator.wxuserAgent == "undefined" ) {
+     	$(".nowx").show();
 	}
 });
 
