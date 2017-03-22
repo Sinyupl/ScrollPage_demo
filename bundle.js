@@ -1911,6 +1911,9 @@ $(document).ready(function(){
 	$(".close").on("click", function(){
 		$(".info").addClass("hide");
 	});
+	if( typeof WeixinJSBridge == "undefined" ){
+		$(".nowx").show();
+	}
 });
 
 

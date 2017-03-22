@@ -192,6 +192,22 @@
   .pages .active {
     background-color: #fff !important; }
 
+.nowx {
+  display: none;
+  padding-top: 200px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .nowx h1 {
+    text-align: center;
+    margin-bottom: 25px; }
+  .nowx img {
+    width: 300px; }
+
 /*甯ф暟鍔ㄧ敾*/
 @keyframes top100 {
   from {
