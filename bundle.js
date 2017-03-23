@@ -1903,7 +1903,7 @@ $.fn.ScrollPage.defaults = {
 
 
 $(document).ready(function(){
-	if( navigator.userAgent.toLowerCase().indexOf('micromessenger') == -1 && typeof navgator.wxuserAgent == "undefined" ) {
+	if( navigator.userAgent.toLowerCase().indexOf('micromessenger') == -1 && typeof navigator.wxuserAgent == "undefined" ) {
      	$(".nowx").show();
 	}
 	$("#container").ScrollPage();
